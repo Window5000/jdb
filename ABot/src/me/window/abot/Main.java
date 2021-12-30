@@ -14,7 +14,9 @@ public class Main{
 
 	public static void main(String[] args) throws LoginException {
 		
-		JDA jda = JDABuilder.createLight(Config.token, GatewayIntent.GUILD_MESSAGES, GatewayIntent.DIRECT_MESSAGES).addEventListeners(new MessageListener(), new PingSlash()).build();
+		JDA jda = JDABuilder.createLight(Config.token, GatewayIntent.GUILD_MESSAGES, GatewayIntent.DIRECT_MESSAGES)
+				.addEventListeners(new MessageListener(), new PingSlash())
+				.build();
 		
 		
 		jda.getPresence().setActivity(Activity.playing("absolutely nothing"));
