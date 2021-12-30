@@ -1,6 +1,8 @@
 
-src/main/java/Config.java
+ABot/src/Config.java
 
 .idea/
 .gradle/
 build/
+/.metadata/
+ABot/src/me/window/abot/util/Config.java
