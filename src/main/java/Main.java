@@ -3,9 +3,11 @@ import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.utils.Compression;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
 
+import javax.security.auth.login.LoginException;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws LoginException {
         JDABuilder builder = JDABuilder.createDefault(Config.token);
 
         // Disable parts of the cache
